@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 1415px;
+}
+
+.center-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    align-self: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-50 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -45,6 +45,10 @@
     display: flex;
     justify-content: left;
     align-self: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
 justify_right {
@@ -57,11 +61,16 @@ justify_right {
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex-direction: column;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+.full {
     width: 100%;
 }
 
@@ -88,7 +97,12 @@ justify_right {
 .row-50 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 100px;
+    justify-items: center;
+}
+
+.item-flex {
+    flex: 0 1 50%;
 }
 
 .profile_picture {
@@ -114,6 +128,42 @@ justify_right {
 .card img {
     width: 298px;
     height: 368px;
+}
+
+.card_v2 {
+    width: 437px;
+    height: 185px;
+    color: white;
+    border: 5px dashed #ffffff;
+    border-radius: 28px;
+    padding: 5px;
+}
+
+.card_v2 h2 {
+    color: white;
+    font-size: 43px;
+    line-height: 0;
+    margin-bottom: 12px;
+}
+
+.card_v2 a {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card_info {
+    margin-left: 30px;
+}
+
+.card_info a {
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.card_info .mail {
+    margin-left: 40px;
+    font-size: 20px;
 }
 
 .blog_list_title {
@@ -237,8 +287,12 @@ a button:hover {
 .desc_boxed_v2 {
     height: 248px;
     width: 651px;
-    line-height: 36px;
     font-weight: 400;
+}
+
+.blog_content p {
+    font-weight: 400;
+    text-align: justify;
 }
 
 .slogan {
@@ -249,6 +303,7 @@ footer {
     min-height: 57px;
     margin: 0;
     padding: 0;
+    margin-top: auto;
 }
 
 .footer-text-v2 {
